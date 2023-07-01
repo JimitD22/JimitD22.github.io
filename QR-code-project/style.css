@@ -23,6 +23,7 @@ body {
     padding: 1.125rem;
     border-radius: 1rem;
     text-align: center;
+    box-shadow: 2px 2px 2px 2px rgb(0,0,0, 0.5);
 }
 
 .text{
