@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@500&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400;
+    background-color: hsl(235, 18%, 26%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+}
+
+.container{
+    background-color: hsl(0, 0%, 100%);
+    margin:0 auto;
+    border-radius: 1.5rem;
+    transition: all 0.3s ease-in;
+}
+
+.container.form{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    width: 50rem;
+    padding: 1rem;
+    visibility: visible;
+}
+
+.container.form.hide{
+    display: none;
+    visibility: hidden;
+}
+
+.container.form .text{
+    padding: 0 2rem;
+}
+
+.container.form h1{
+    font-size: 3rem;
+    margin-bottom: 1.25rem;
+}
+
+.container.form p{
+    margin-bottom: 1.5rem;
+    color: hsl(235, 18%, 26%);
+}
+.container.form ul{
+    list-style-image: url(./assets/images/icon-list.svg);
+    margin-left: 1.5rem;
+}
+
+.container.form ul li{
+    margin-bottom: 0.625rem;
+    color: hsl(235, 18%, 26%);
+}
+
+.container.form .illustration{
+    width: 50%;
+}
+.container.form .img-illustration{
+    width: 100%;
+}
+
+.container.form form{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    font-family: inherit;
+}
+
+form label{
+    color: hsl(235, 18%, 26%);
+}
+
+form input{
+    margin-top: 0.625rem;
+    padding: 1rem 1.25rem;
+    border-radius: 0.5rem;
+    border: 1px solid hsl(231, 7%, 60%);
+}
+
+form button{
+    border: none;
+    outline: none;
+    margin-top: 1.25rem;
+    background-color:hsl(235, 18%, 26%);
+    color: white;
+    padding: 1rem 1.25rem;
+    border-radius: 0.5rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.container.success{
+    flex-direction: column;
+    width: 29rem;
+    visibility: visible;
+}
+
+.container.success.hide{
+    display: none;
+    visibility: hidden;
+}
+
+.card{
+    padding: 3rem;
+    color: hsl(235, 18%, 26%);
+}
+
+.card button{
+    border: none;
+    outline: none;
+    background-color:hsl(235, 18%, 26%);
+    color: white;
+    padding: 1rem 1.25rem;
+    border-radius: 0.5rem;
+    font-weight: 700;
+    width: 100%;
+}
+
+.card h1{
+    margin: 1.5rem 0;
+    font-size: 3rem;
+}
+
+.card p{
+    margin-bottom: 1.5rem;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: hsl(4, 100%, 67%);
+}
+
+input.error{
+    border: 1px solid hsl(4, 100%, 67%);
+}
