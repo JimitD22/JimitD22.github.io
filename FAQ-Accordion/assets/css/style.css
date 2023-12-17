@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    background-color: hsl(275, 100%, 97%);
+    background-image: url("../images/background-pattern-desktop.svg");
+    background-repeat: no-repeat;
+}
+
+.container.faq{
+    background: hsl(0, 0%, 100%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 2.5rem;
+    border-radius: 1.5rem;
+    width: 50%;
+}
+
+.container-title{
+    display: flex;
+    align-items: center;
+}
+
+.container-title .heading{
+    font-size: 3rem;
+    font-weight: 700;
+    margin-left: 1rem;
+}
+
+.expand-collapse-block{
+    padding: 1rem 0;
+    border-bottom: 1px solid hsl(292, 16%, 49%);
+}
+
+.expand-collapse-block:last-child{
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.expand-collapse-block .accordion-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.accordion-header .accordion-title{
+    font-size: 1rem;
+}
+
+.accordion-header .accordion-title:hover{
+    color: hsl(292, 42%, 14%);
+    cursor: pointer;
+}
+
+.star-img{
+    width: 40px; 
+    height: 40px;
+}
+
+.expand-collapse-block.is-expanded .accordion-body{
+    display: block;
+    visibility: visible;
+    max-height: max-content;
+    margin-top: 1.5rem;
+}
+
+.expand-collapse-block .accordion-body{
+    display: none;
+    visibility: hidden;
+    max-height: 0;
+    transition: 3s ease-in;
+}
+
+.accordion-body .para{
+    font-size: 0.875rem;
+}
+
+.action-wrapper{
+    padding-left: 1rem;
+}
+
+.expand-icon,
+.collapse-icon{
+    width: 28px;
+    height: 28px;
+    transition: 0.1s ease-in;
+}
+
+.expand-icon:hover,
+.collapse-icon:hover{
+    cursor: pointer;
+}
+
+.expand-collapse-block.is-expanded .expand-icon{
+    display: none;
+    visibility: hidden;
+}
+
+.expand-collapse-block.is-expaned .collapse-icon{
+    display: block;
+    visibility: visible;
+}
+
+.expand-collapse-block:not(.is-expanded) .expand-icon{
+    display: block;
+    visibility: visible;
+}
+
+.expand-collapse-block:not(.is-expanded) .collapse-icon{
+    display: none;
+    visibility: hidden;
+}
+
+@media (min-width: 375px) and (max-width:768px) {
+    .container.faq{
+        width: 90%;
+    }
+
+    .container-title .heading{
+        font-size: 1.5rem;
+    }
+
+    .star-img{
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+}
