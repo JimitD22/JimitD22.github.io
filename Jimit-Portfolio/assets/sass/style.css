@@ -106,7 +106,7 @@ section {
   width: 400px;
   margin: auto 0;
 }
-.container.profile img {
+.container.profile .profile-pic {
   border-radius: 50%;
 }
 .container.profile.about {
@@ -315,7 +315,7 @@ footer .copyright p {
     display: flex;
   }
 }
-@media (min-width: 769px) and (max-width: 1200px) {
+@media (min-width: 770px) and (max-width: 1200px) {
   .section-container {
     flex-direction: column;
   }
@@ -336,12 +336,26 @@ footer .copyright p {
   }
   .profile:not(.about) {
     margin: auto !important;
+    height: -moz-max-content;
+    height: max-content;
+    width: -moz-max-content;
+    width: max-content;
   }
-  .profile:not(.about) img {
-    width: 400px;
+  .profile:not(.about) .profile-pic {
+    margin: 0 auto !important;
+    width: 250px;
+    height: 250px;
+  }
+  .about:not(.icon, .text) {
+    height: -moz-max-content;
+    height: max-content;
+    width: -moz-max-content;
+    width: max-content;
   }
   .about-img {
-    width: 400px;
+    margin: 0 auto;
+    width: 250px;
+    height: 250px;
   }
   #about .section-container {
     gap: 2rem;

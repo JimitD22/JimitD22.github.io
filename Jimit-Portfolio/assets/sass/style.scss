@@ -117,7 +117,7 @@ section {
         width: 400px;
         margin: auto 0;
 
-        img {
+        .profile-pic {
             border-radius: 50%;
         }
 
@@ -382,7 +382,7 @@ footer {
     }
 }
 
-@media (min-width: 769px) and (max-width: 1200px) {
+@media (min-width: 770px) and (max-width: 1200px) {
     .section-container {
         flex-direction: column;
     }
@@ -408,14 +408,25 @@ footer {
 
     .profile:not(.about) {
         margin: auto !important;
+        height: max-content;
+        width: max-content;
 
-        img {
-            width: 300px;
+        .profile-pic {
+            margin: 0 auto !important;
+            width: 250px;
+            height: 250px;
         }
     }
 
+    .about:not(.icon, .text){
+        height: max-content;
+        width: max-content;
+    }
+
     .about-img {
-        width: 300px;
+        margin: 0 auto;
+        width: 250px;
+        height: 250px;
     }
 
     #about {
